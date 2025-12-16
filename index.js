@@ -1,5 +1,5 @@
 const express = require('express');
-const prosesSemuaNOP = require('./services/nop.service');
+const prosesSemuaNOP = require('./services/nop.service.js');
 const nopList = require('./data/datanop.js');
 
 const app = express();
@@ -9,7 +9,7 @@ app.get('/run', async (req, res) => {
 	prosesSemuaNOP(nopList);
 	res.json({
 		status: true,
-		message: 'Proses cek dimulai. Lihat output/hasil-cek-nop.txt',
+		message: 'Proses berjalan. Cek folder output.',
 	});
 });
 
