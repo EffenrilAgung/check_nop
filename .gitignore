@@ -44,7 +44,7 @@ build/Release
 data/*
 
 output/*
-
+.txt
 
 # Dependency directories
 node_modules/
